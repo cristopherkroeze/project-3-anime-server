@@ -26,10 +26,17 @@ app.enable('trust proxy');
 
 app.use(
     cors({
-      origin: ['http://localhost:3000']
+      origin: ['https://master--spontaneous-arithmetic-e5d265.netlify.app']
     })
   );
+
   
+  
+  // app.use(
+  //   cors({
+  //     origin: ['http://localhost:3000']
+  //   })
+  // );
 
 app.use('/animes', animesRouter);
 app.use('/auth', authRouter);
